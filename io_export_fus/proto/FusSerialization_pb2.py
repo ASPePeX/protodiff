@@ -19,6 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto2',
   serialized_options=None,
+  create_key=_descriptor._internal_create_key,
   serialized_pb=b'\n\x16\x46usSerialization.proto\"3\n\x05\x41\x41\x42\x42\x66\x12\x14\n\x03min\x18\x01 \x01(\x0b\x32\x07.float3\x12\x14\n\x03max\x18\x02 \x01(\x0b\x32\x07.float3\";\n\x0c\x46usAnimation\x12+\n\x0f\x41nimationTracks\x18\x03 \x03(\x0b\x32\x12.FusAnimationTrack\"\xff\x02\n\x13\x46usAnimationKeyBase\x12\x0f\n\x04Time\x18\x01 \x01(\x02:\x01\x30\x12\x37\n\x15\x46usAnimationKeyDouble\x18\x64 \x01(\x0b\x32\x16.FusAnimationKeyDoubleH\x00\x12\x31\n\x12\x46usAnimationKeyInt\x18\x65 \x01(\x0b\x32\x13.FusAnimationKeyIntH\x00\x12\x35\n\x14\x46usAnimationKeyFloat\x18\x66 \x01(\x0b\x32\x15.FusAnimationKeyFloatH\x00\x12\x37\n\x15\x46usAnimationKeyFloat2\x18g \x01(\x0b\x32\x16.FusAnimationKeyFloat2H\x00\x12\x37\n\x15\x46usAnimationKeyFloat3\x18h \x01(\x0b\x32\x16.FusAnimationKeyFloat3H\x00\x12\x37\n\x15\x46usAnimationKeyFloat4\x18i \x01(\x0b\x32\x16.FusAnimationKeyFloat4H\x00\x42\t\n\x07subtype\")\n\x15\x46usAnimationKeyDouble\x12\x10\n\x05Value\x18\x01 \x01(\x01:\x01\x30\"(\n\x14\x46usAnimationKeyFloat\x12\x10\n\x05Value\x18\x01 \x01(\x02:\x01\x30\"/\n\x15\x46usAnimationKeyFloat2\x12\x16\n\x05Value\x18\x01 \x01(\x0b\x32\x07.float2\"/\n\x15\x46usAnimationKeyFloat3\x12\x16\n\x05Value\x18\x01 \x01(\x0b\x32\x07.float3\"/\n\x15\x46usAnimationKeyFloat4\x12\x16\n\x05Value\x18\x01 \x01(\x0b\x32\x07.float4\"&\n\x12\x46usAnimationKeyInt\x12\x10\n\x05Value\x18\x01 \x01(\x05:\x01\x30\"\xb9\x01\n\x11\x46usAnimationTrack\x12%\n\x0eSceneComponent\x18\x01 \x01(\x0b\x32\r.FusComponent\x12\x10\n\x08Property\x18\x02 \x01(\t\x12\x1f\n\x06TypeId\x18\x03 \x01(\x0e\x32\x07.TypeId:\x06\x44ouble\x12\'\n\tKeyFrames\x18\x04 \x03(\x0b\x32\x14.FusAnimationKeyBase\x12!\n\x08LerpType\x18\x05 \x01(\x0e\x32\t.LerpType:\x04Lerp\"\x17\n\x07\x46usBone\x12\x0c\n\x04Name\x18\x01 \x01(\t\"\x92\x02\n\tFusCamera\x12\x19\n\nClearColor\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x19\n\nClearDepth\x18\x02 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05Layer\x18\x03 \x01(\x05:\x01\x30\x12 \n\x0f\x42\x61\x63kgroundColor\x18\x04 \x01(\x0b\x32\x07.float4\x12\x38\n\x10ProjectionMethod\x18\x05 \x01(\x0e\x32\x11.ProjectionMethod:\x0bPerspective\x12\x0e\n\x03\x46ov\x18\x06 \x01(\x02:\x01\x30\x12\x1f\n\x0e\x43lippingPlanes\x18\x07 \x01(\x0b\x32\x07.float2\x12\x19\n\x08Viewport\x18\x08 \x01(\x0b\x32\x07.float4\x12\x15\n\x06\x41\x63tive\x18\t \x01(\x08:\x05\x66\x61lse\"\xb5\x02\n\x0c\x46usComponent\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12%\n\x0c\x46usTransform\x18\x64 \x01(\x0b\x32\r.FusTransformH\x00\x12\x1b\n\x07\x46usMesh\x18\x65 \x01(\x0b\x32\x08.FusMeshH\x00\x12#\n\x0b\x46usMaterial\x18\x66 \x01(\x0b\x32\x0c.FusMaterialH\x00\x12\x1d\n\x08\x46usLight\x18g \x01(\x0b\x32\t.FusLightH\x00\x12\x1f\n\tFusWeight\x18h \x01(\x0b\x32\n.FusWeightH\x00\x12%\n\x0c\x46usAnimation\x18i \x01(\x0b\x32\r.FusAnimationH\x00\x12\x1b\n\x07\x46usBone\x18j \x01(\x0b\x32\x08.FusBoneH\x00\x12\x1f\n\tFusCamera\x18k \x01(\x0b\x32\n.FusCameraH\x00\x42\t\n\x07subtype\"8\n\x0b\x46usContents\x12\x1e\n\x08\x46usScene\x18\xc9\x01 \x01(\x0b\x32\t.FusSceneH\x00\x42\t\n\x07subtype\"E\n\x07\x46usFile\x12\x1a\n\x06Header\x18\x01 \x01(\x0b\x32\n.FusHeader\x12\x1e\n\x08\x43ontents\x18\x02 \x01(\x0b\x32\x0c.FusContents\"_\n\tFusHeader\x12\x16\n\x0b\x46ileVersion\x18\x01 \x01(\x05:\x01\x30\x12\x11\n\tGenerator\x18\x02 \x01(\t\x12\x11\n\tCreatedBy\x18\x03 \x01(\t\x12\x14\n\x0c\x43reationDate\x18\x04 \x01(\t\"\xbd\x01\n\x08\x46usLight\x12\x15\n\x06\x41\x63tive\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x05\x43olor\x18\x02 \x01(\x0b\x32\x07.float4\x12\x16\n\x0bMaxDistance\x18\x03 \x01(\x02:\x01\x30\x12\x13\n\x08Strength\x18\x04 \x01(\x02:\x01\x30\x12\x1f\n\x04Type\x18\x05 \x01(\x0e\x32\n.LightType:\x05Point\x12\x19\n\x0eOuterConeAngle\x18\x06 \x01(\x02:\x01\x30\x12\x19\n\x0eInnerConeAngle\x18\x07 \x01(\x02:\x01\x30\"\xe9\x01\n\x0b\x46usMaterial\x12$\n\x06\x41lbedo\x18\x01 \x01(\x0b\x32\x14.MatChannelContainer\x12&\n\x08Specular\x18\x02 \x01(\x0b\x32\x14.MatChannelContainer\x12&\n\x08\x45missive\x18\x03 \x01(\x0b\x32\x14.MatChannelContainer\x12-\n\tNormalMap\x18\x04 \x01(\x0b\x32\x1a.NormapMapChannelContainer\x12*\n\x0e\x46usMaterialPBR\x18\xc8\x01 \x01(\x0b\x32\x0f.FusMaterialPBRH\x00\x42\t\n\x07subtype\"f\n\x0e\x46usMaterialPBR\x12\x19\n\x0eRoughnessValue\x18\x01 \x01(\x02:\x01\x30\x12\x1d\n\x12\x46resnelReflectance\x18\x02 \x01(\x02:\x01\x30\x12\x1a\n\x0f\x44iffuseFraction\x18\x03 \x01(\x02:\x01\x30\"\x9d\x02\n\x07\x46usMesh\x12\x19\n\x08Vertices\x18\x01 \x03(\x0b\x32\x07.float3\x12\x0e\n\x06\x43olors\x18\x02 \x03(\r\x12\x18\n\x07Normals\x18\x03 \x03(\x0b\x32\x07.float3\x12\x14\n\x03UVs\x18\x04 \x03(\x0b\x32\x07.float2\x12\x1c\n\x0b\x42oneWeights\x18\x05 \x03(\x0b\x32\x07.float4\x12\x1c\n\x0b\x42oneIndices\x18\x06 \x03(\x0b\x32\x07.float4\x12\x11\n\tTriangles\x18\x07 \x03(\r\x12\x1b\n\x0b\x42oundingBox\x18\x08 \x01(\x0b\x32\x06.AABBf\x12\x19\n\x08Tangents\x18\t \x03(\x0b\x32\x07.float4\x12\x1b\n\nBiTangents\x18\n \x03(\x0b\x32\x07.float3\x12\x13\n\x08MeshType\x18\x0b \x01(\x05:\x01\x30\"G\n\x07\x46usNode\x12\x0c\n\x04Name\x18\x01 \x01(\t\x12\x12\n\nComponents\x18\x02 \x03(\x05\x12\x1a\n\x08\x43hildren\x18\x03 \x03(\x0b\x32\x08.FusNode\"L\n\x08\x46usScene\x12$\n\rComponentList\x18\x01 \x03(\x0b\x32\r.FusComponent\x12\x1a\n\x08\x43hildren\x18\x02 \x03(\x0b\x32\x08.FusNode\"_\n\x0c\x46usTransform\x12\x1c\n\x0bTranslation\x18\x01 \x01(\x0b\x32\x07.float3\x12\x19\n\x08Rotation\x18\x02 \x01(\x0b\x32\x07.float3\x12\x16\n\x05Scale\x18\x03 \x01(\x0b\x32\x07.float3\"t\n\tFusWeight\x12$\n\tWeightMap\x18\x01 \x03(\x0b\x32\x11.VertexWeightList\x12\x1d\n\x06Joints\x18\x02 \x03(\x0b\x32\r.FusComponent\x12\"\n\x0f\x42indingMatrices\x18\x03 \x03(\x0b\x32\t.float4x4\"\x98\x01\n\x13MatChannelContainer\x12\x16\n\x05\x43olor\x18\x01 \x01(\x0b\x32\x07.float4\x12\x0f\n\x07Texture\x18\x02 \x01(\t\x12\x0e\n\x03Mix\x18\x03 \x01(\x02:\x01\x30\x12=\n\x18SpecularChannelContainer\x18\x64 \x01(\x0b\x32\x19.SpecularChannelContainerH\x00\x42\t\n\x07subtype\"B\n\x19NormapMapChannelContainer\x12\x0f\n\x07Texture\x18\x01 \x01(\t\x12\x14\n\tIntensity\x18\x02 \x01(\x02:\x01\x30\"F\n\x18SpecularChannelContainer\x12\x14\n\tShininess\x18\x01 \x01(\x02:\x01\x30\x12\x14\n\tIntensity\x18\x02 \x01(\x02:\x01\x30\"8\n\x0cVertexWeight\x12\x15\n\nJointIndex\x18\x01 \x01(\x05:\x01\x30\x12\x11\n\x06Weight\x18\x02 \x01(\x02:\x01\x30\"8\n\x10VertexWeightList\x12$\n\rVertexWeights\x18\x01 \x03(\x0b\x32\r.VertexWeight\"$\n\x06\x66loat2\x12\x0c\n\x01x\x18\x01 \x01(\x02:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x02:\x01\x30\"2\n\x06\x66loat3\x12\x0c\n\x01x\x18\x01 \x01(\x02:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x02:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x02:\x01\x30\"@\n\x06\x66loat4\x12\x0c\n\x01x\x18\x01 \x01(\x02:\x01\x30\x12\x0c\n\x01y\x18\x02 \x01(\x02:\x01\x30\x12\x0c\n\x01z\x18\x03 \x01(\x02:\x01\x30\x12\x0c\n\x01w\x18\x04 \x01(\x02:\x01\x30\"f\n\x08\x66loat4x4\x12\x15\n\x04Row0\x18\x01 \x01(\x0b\x32\x07.float4\x12\x15\n\x04Row1\x18\x02 \x01(\x0b\x32\x07.float4\x12\x15\n\x04Row2\x18\x03 \x01(\x0b\x32\x07.float4\x12\x15\n\x04Row3\x18\x04 \x01(\x0b\x32\x07.float4*\x1f\n\x08LerpType\x12\x08\n\x04Lerp\x10\x00\x12\t\n\x05Slerp\x10\x01*:\n\tLightType\x12\t\n\x05Point\x10\x00\x12\x0c\n\x08Parallel\x10\x01\x12\x08\n\x04Spot\x10\x02\x12\n\n\x06Legacy\x10\x03*5\n\x10ProjectionMethod\x12\x0f\n\x0bPerspective\x10\x00\x12\x10\n\x0cOrthographic\x10\x01*V\n\x06TypeId\x12\n\n\x06\x44ouble\x10\x00\x12\x07\n\x03Int\x10\x01\x12\t\n\x05\x46loat\x10\x02\x12\n\n\x06\x46loat2\x10\x03\x12\n\n\x06\x46loat3\x10\x04\x12\n\n\x06\x46loat4\x10\x05\x12\x08\n\x04\x42ool\x10\x06'
 )
 
@@ -27,15 +28,18 @@ _LERPTYPE = _descriptor.EnumDescriptor(
   full_name='LerpType',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='Lerp', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Slerp', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -50,23 +54,28 @@ _LIGHTTYPE = _descriptor.EnumDescriptor(
   full_name='LightType',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='Point', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Parallel', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Spot', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Legacy', index=3, number=3,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -81,15 +90,18 @@ _PROJECTIONMETHOD = _descriptor.EnumDescriptor(
   full_name='ProjectionMethod',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='Perspective', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Orthographic', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -104,35 +116,43 @@ _TYPEID = _descriptor.EnumDescriptor(
   full_name='TypeId',
   filename=None,
   file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
   values=[
     _descriptor.EnumValueDescriptor(
       name='Double', index=0, number=0,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Int', index=1, number=1,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Float', index=2, number=2,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Float2', index=3, number=3,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Float3', index=4, number=4,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Float4', index=5, number=5,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
       name='Bool', index=6, number=6,
       serialized_options=None,
-      type=None),
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
@@ -166,6 +186,7 @@ _AABBF = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='min', full_name='AABBf.min', index=0,
@@ -173,14 +194,14 @@ _AABBF = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='max', full_name='AABBf.max', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -204,6 +225,7 @@ _FUSANIMATION = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='AnimationTracks', full_name='FusAnimation.AnimationTracks', index=0,
@@ -211,7 +233,7 @@ _FUSANIMATION = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -235,6 +257,7 @@ _FUSANIMATIONKEYBASE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Time', full_name='FusAnimationKeyBase.Time', index=0,
@@ -242,49 +265,49 @@ _FUSANIMATIONKEYBASE = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimationKeyDouble', full_name='FusAnimationKeyBase.FusAnimationKeyDouble', index=1,
       number=100, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimationKeyInt', full_name='FusAnimationKeyBase.FusAnimationKeyInt', index=2,
       number=101, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimationKeyFloat', full_name='FusAnimationKeyBase.FusAnimationKeyFloat', index=3,
       number=102, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimationKeyFloat2', full_name='FusAnimationKeyBase.FusAnimationKeyFloat2', index=4,
       number=103, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimationKeyFloat3', full_name='FusAnimationKeyBase.FusAnimationKeyFloat3', index=5,
       number=104, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimationKeyFloat4', full_name='FusAnimationKeyBase.FusAnimationKeyFloat4', index=6,
       number=105, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -298,7 +321,9 @@ _FUSANIMATIONKEYBASE = _descriptor.Descriptor(
   oneofs=[
     _descriptor.OneofDescriptor(
       name='subtype', full_name='FusAnimationKeyBase.subtype',
-      index=0, containing_type=None, fields=[]),
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=141,
   serialized_end=524,
@@ -311,6 +336,7 @@ _FUSANIMATIONKEYDOUBLE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Value', full_name='FusAnimationKeyDouble.Value', index=0,
@@ -318,7 +344,7 @@ _FUSANIMATIONKEYDOUBLE = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -342,6 +368,7 @@ _FUSANIMATIONKEYFLOAT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Value', full_name='FusAnimationKeyFloat.Value', index=0,
@@ -349,7 +376,7 @@ _FUSANIMATIONKEYFLOAT = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -373,6 +400,7 @@ _FUSANIMATIONKEYFLOAT2 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Value', full_name='FusAnimationKeyFloat2.Value', index=0,
@@ -380,7 +408,7 @@ _FUSANIMATIONKEYFLOAT2 = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -404,6 +432,7 @@ _FUSANIMATIONKEYFLOAT3 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Value', full_name='FusAnimationKeyFloat3.Value', index=0,
@@ -411,7 +440,7 @@ _FUSANIMATIONKEYFLOAT3 = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -435,6 +464,7 @@ _FUSANIMATIONKEYFLOAT4 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Value', full_name='FusAnimationKeyFloat4.Value', index=0,
@@ -442,7 +472,7 @@ _FUSANIMATIONKEYFLOAT4 = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -466,6 +496,7 @@ _FUSANIMATIONKEYINT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Value', full_name='FusAnimationKeyInt.Value', index=0,
@@ -473,7 +504,7 @@ _FUSANIMATIONKEYINT = _descriptor.Descriptor(
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -497,6 +528,7 @@ _FUSANIMATIONTRACK = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='SceneComponent', full_name='FusAnimationTrack.SceneComponent', index=0,
@@ -504,35 +536,35 @@ _FUSANIMATIONTRACK = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Property', full_name='FusAnimationTrack.Property', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='TypeId', full_name='FusAnimationTrack.TypeId', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='KeyFrames', full_name='FusAnimationTrack.KeyFrames', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='LerpType', full_name='FusAnimationTrack.LerpType', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -556,6 +588,7 @@ _FUSBONE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='FusBone.Name', index=0,
@@ -563,7 +596,7 @@ _FUSBONE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -587,6 +620,7 @@ _FUSCAMERA = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ClearColor', full_name='FusCamera.ClearColor', index=0,
@@ -594,63 +628,63 @@ _FUSCAMERA = _descriptor.Descriptor(
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ClearDepth', full_name='FusCamera.ClearDepth', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Layer', full_name='FusCamera.Layer', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='BackgroundColor', full_name='FusCamera.BackgroundColor', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ProjectionMethod', full_name='FusCamera.ProjectionMethod', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Fov', full_name='FusCamera.Fov', index=5,
       number=6, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='ClippingPlanes', full_name='FusCamera.ClippingPlanes', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Viewport', full_name='FusCamera.Viewport', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Active', full_name='FusCamera.Active', index=8,
       number=9, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -674,6 +708,7 @@ _FUSCOMPONENT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='FusComponent.Name', index=0,
@@ -681,63 +716,63 @@ _FUSCOMPONENT = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusTransform', full_name='FusComponent.FusTransform', index=1,
       number=100, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusMesh', full_name='FusComponent.FusMesh', index=2,
       number=101, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusMaterial', full_name='FusComponent.FusMaterial', index=3,
       number=102, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusLight', full_name='FusComponent.FusLight', index=4,
       number=103, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusWeight', full_name='FusComponent.FusWeight', index=5,
       number=104, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusAnimation', full_name='FusComponent.FusAnimation', index=6,
       number=105, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusBone', full_name='FusComponent.FusBone', index=7,
       number=106, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusCamera', full_name='FusComponent.FusCamera', index=8,
       number=107, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -751,7 +786,9 @@ _FUSCOMPONENT = _descriptor.Descriptor(
   oneofs=[
     _descriptor.OneofDescriptor(
       name='subtype', full_name='FusComponent.subtype',
-      index=0, containing_type=None, fields=[]),
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=1289,
   serialized_end=1598,
@@ -764,6 +801,7 @@ _FUSCONTENTS = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='FusScene', full_name='FusContents.FusScene', index=0,
@@ -771,7 +809,7 @@ _FUSCONTENTS = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -785,7 +823,9 @@ _FUSCONTENTS = _descriptor.Descriptor(
   oneofs=[
     _descriptor.OneofDescriptor(
       name='subtype', full_name='FusContents.subtype',
-      index=0, containing_type=None, fields=[]),
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=1600,
   serialized_end=1656,
@@ -798,6 +838,7 @@ _FUSFILE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Header', full_name='FusFile.Header', index=0,
@@ -805,14 +846,14 @@ _FUSFILE = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Contents', full_name='FusFile.Contents', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -836,6 +877,7 @@ _FUSHEADER = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='FileVersion', full_name='FusHeader.FileVersion', index=0,
@@ -843,28 +885,28 @@ _FUSHEADER = _descriptor.Descriptor(
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Generator', full_name='FusHeader.Generator', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='CreatedBy', full_name='FusHeader.CreatedBy', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='CreationDate', full_name='FusHeader.CreationDate', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -888,6 +930,7 @@ _FUSLIGHT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Active', full_name='FusLight.Active', index=0,
@@ -895,49 +938,49 @@ _FUSLIGHT = _descriptor.Descriptor(
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Color', full_name='FusLight.Color', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='MaxDistance', full_name='FusLight.MaxDistance', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Strength', full_name='FusLight.Strength', index=3,
       number=4, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Type', full_name='FusLight.Type', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='OuterConeAngle', full_name='FusLight.OuterConeAngle', index=5,
       number=6, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='InnerConeAngle', full_name='FusLight.InnerConeAngle', index=6,
       number=7, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -961,6 +1004,7 @@ _FUSMATERIAL = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Albedo', full_name='FusMaterial.Albedo', index=0,
@@ -968,35 +1012,35 @@ _FUSMATERIAL = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Specular', full_name='FusMaterial.Specular', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Emissive', full_name='FusMaterial.Emissive', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='NormalMap', full_name='FusMaterial.NormalMap', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FusMaterialPBR', full_name='FusMaterial.FusMaterialPBR', index=4,
       number=200, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1010,7 +1054,9 @@ _FUSMATERIAL = _descriptor.Descriptor(
   oneofs=[
     _descriptor.OneofDescriptor(
       name='subtype', full_name='FusMaterial.subtype',
-      index=0, containing_type=None, fields=[]),
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=2019,
   serialized_end=2252,
@@ -1023,6 +1069,7 @@ _FUSMATERIALPBR = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='RoughnessValue', full_name='FusMaterialPBR.RoughnessValue', index=0,
@@ -1030,21 +1077,21 @@ _FUSMATERIALPBR = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='FresnelReflectance', full_name='FusMaterialPBR.FresnelReflectance', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='DiffuseFraction', full_name='FusMaterialPBR.DiffuseFraction', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1068,6 +1115,7 @@ _FUSMESH = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Vertices', full_name='FusMesh.Vertices', index=0,
@@ -1075,77 +1123,77 @@ _FUSMESH = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Colors', full_name='FusMesh.Colors', index=1,
       number=2, type=13, cpp_type=3, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Normals', full_name='FusMesh.Normals', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='UVs', full_name='FusMesh.UVs', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='BoneWeights', full_name='FusMesh.BoneWeights', index=4,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='BoneIndices', full_name='FusMesh.BoneIndices', index=5,
       number=6, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Triangles', full_name='FusMesh.Triangles', index=6,
       number=7, type=13, cpp_type=3, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='BoundingBox', full_name='FusMesh.BoundingBox', index=7,
       number=8, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Tangents', full_name='FusMesh.Tangents', index=8,
       number=9, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='BiTangents', full_name='FusMesh.BiTangents', index=9,
       number=10, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='MeshType', full_name='FusMesh.MeshType', index=10,
       number=11, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1169,6 +1217,7 @@ _FUSNODE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Name', full_name='FusNode.Name', index=0,
@@ -1176,21 +1225,21 @@ _FUSNODE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Components', full_name='FusNode.Components', index=1,
       number=2, type=5, cpp_type=1, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Children', full_name='FusNode.Children', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1214,6 +1263,7 @@ _FUSSCENE = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='ComponentList', full_name='FusScene.ComponentList', index=0,
@@ -1221,14 +1271,14 @@ _FUSSCENE = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Children', full_name='FusScene.Children', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1252,6 +1302,7 @@ _FUSTRANSFORM = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Translation', full_name='FusTransform.Translation', index=0,
@@ -1259,21 +1310,21 @@ _FUSTRANSFORM = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Rotation', full_name='FusTransform.Rotation', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Scale', full_name='FusTransform.Scale', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1297,6 +1348,7 @@ _FUSWEIGHT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='WeightMap', full_name='FusWeight.WeightMap', index=0,
@@ -1304,21 +1356,21 @@ _FUSWEIGHT = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Joints', full_name='FusWeight.Joints', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='BindingMatrices', full_name='FusWeight.BindingMatrices', index=2,
       number=3, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1342,6 +1394,7 @@ _MATCHANNELCONTAINER = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Color', full_name='MatChannelContainer.Color', index=0,
@@ -1349,28 +1402,28 @@ _MATCHANNELCONTAINER = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Texture', full_name='MatChannelContainer.Texture', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Mix', full_name='MatChannelContainer.Mix', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='SpecularChannelContainer', full_name='MatChannelContainer.SpecularChannelContainer', index=3,
       number=100, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1384,7 +1437,9 @@ _MATCHANNELCONTAINER = _descriptor.Descriptor(
   oneofs=[
     _descriptor.OneofDescriptor(
       name='subtype', full_name='MatChannelContainer.subtype',
-      index=0, containing_type=None, fields=[]),
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=3013,
   serialized_end=3165,
@@ -1397,6 +1452,7 @@ _NORMAPMAPCHANNELCONTAINER = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Texture', full_name='NormapMapChannelContainer.Texture', index=0,
@@ -1404,14 +1460,14 @@ _NORMAPMAPCHANNELCONTAINER = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Intensity', full_name='NormapMapChannelContainer.Intensity', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1435,6 +1491,7 @@ _SPECULARCHANNELCONTAINER = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Shininess', full_name='SpecularChannelContainer.Shininess', index=0,
@@ -1442,14 +1499,14 @@ _SPECULARCHANNELCONTAINER = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Intensity', full_name='SpecularChannelContainer.Intensity', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1473,6 +1530,7 @@ _VERTEXWEIGHT = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='JointIndex', full_name='VertexWeight.JointIndex', index=0,
@@ -1480,14 +1538,14 @@ _VERTEXWEIGHT = _descriptor.Descriptor(
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Weight', full_name='VertexWeight.Weight', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1511,6 +1569,7 @@ _VERTEXWEIGHTLIST = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='VertexWeights', full_name='VertexWeightList.VertexWeights', index=0,
@@ -1518,7 +1577,7 @@ _VERTEXWEIGHTLIST = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1542,6 +1601,7 @@ _FLOAT2 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='x', full_name='float2.x', index=0,
@@ -1549,14 +1609,14 @@ _FLOAT2 = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='y', full_name='float2.y', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1580,6 +1640,7 @@ _FLOAT3 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='x', full_name='float3.x', index=0,
@@ -1587,21 +1648,21 @@ _FLOAT3 = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='y', full_name='float3.y', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='z', full_name='float3.z', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1625,6 +1686,7 @@ _FLOAT4 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='x', full_name='float4.x', index=0,
@@ -1632,28 +1694,28 @@ _FLOAT4 = _descriptor.Descriptor(
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='y', full_name='float4.y', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='z', full_name='float4.z', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='w', full_name='float4.w', index=3,
       number=4, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1677,6 +1739,7 @@ _FLOAT4X4 = _descriptor.Descriptor(
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
+  create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
       name='Row0', full_name='float4x4.Row0', index=0,
@@ -1684,28 +1747,28 @@ _FLOAT4X4 = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Row1', full_name='float4x4.Row1', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Row2', full_name='float4x4.Row2', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='Row3', full_name='float4x4.Row3', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
